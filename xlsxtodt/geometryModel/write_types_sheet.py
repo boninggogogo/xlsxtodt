@@ -66,7 +66,8 @@ def write_types_sheet(types_sheet: Any, all_data: Any):
         server_data = {
             "depth": get_cell_value(sheet=types_sheet, row=row, column=types_col_indices['server']['depth']),
             "slotOccupation": get_cell_value(sheet=types_sheet, row=row,
-                                             column=types_col_indices['server']['slotOccupation'])
+                                             column=types_col_indices['server']['slotOccupation']),
+            "width": get_cell_value(sheet=types_sheet, row=row, column=types_col_indices['server']['width'])
         }
 
         all_data['geometryModel']['servers'][server_name] = server_data

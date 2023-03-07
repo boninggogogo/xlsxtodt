@@ -35,98 +35,24 @@ class XlsxToDT:
             },
             "geometry": {
                 "height": None,
-                "plane": [
-                    # {
-                    #     "x": None,
-                    #     "y": None,
-                    #     "z": None
-                    # }, # Repeat the above dict
-                ]
+                "plane": []
             },
             "constructions": {
                 "falseCeiling": None,
                 "raisedFloor": {
                     "geometry": {
                         "height": None,
-                        "openings": {
-                            # "opening_name": {
-                            #     "location": {
-                            #         "x": None,
-                            #         "y": None,
-                            #         "z": None
-                            #     },
-                            #     "size": {
-                            #         "x": None,
-                            #         "y": None,
-                            #         "z": None
-                            #     }
-                            # }, # Repeat the above dict
-                        }
+                        "openings": {}
                     }
                 },
-                "boxes": {
-                    # "boxes_name": {
-                    #     "geometry": {
-                    #         "model": "model_name",
-                    #         "size": {
-                    #             "x": None,
-                    #             "y": None,
-                    #             "z": None
-                    #         },
-                    #         "location": {
-                    #             "x": None,
-                    #             "y": None,
-                    #             "z": None
-                    #         }
-                    #     }
-                    # }, # Repeat the above dict
-                },
-                "acus": {
-                    # "acus_name": {
-                    #     "geometry": {
-                    #         "model": "model_name",
-                    #         "orientation": None,
-                    #         "location": {
-                    #             "x": None,
-                    #             "y": None,
-                    #             "z": None
-                    #         }
-                    #     }
-                    # },  # Repeat the above dict
-                },
-                "racks": {
-                    # "rack_name": {
-                    #     "geometry": {
-                    #         "model": "model_name",
-                    #         "location": {
-                    #             "x": None,
-                    #             "y": None,
-                    #             "z": None
-                    #         },
-                    #         "orientation": None,
-                    #         "hasBlankingPanel": False
-                    #     },
-                    #     "construction": {
-                    #         "servers": None
-                    #     }
-                    # },  # Repeat the above dict
-                },
-                # "sensors": {
-                    # "sensor_name": {
-                    #     "geometry": {
-                    #         "location": {
-                    #             "x": None,
-                    #             "y": None,
-                    #             "z": None
-                    #         }
-                    #     }
-                    # },  # Repeat the above dict
-                # }
+                "boxes": {},
+                "acus": {},
+                "racks": {},
+                "sensors": {}
             },
             "inputs": {
-                'servers': {
-
-                }
+                'acus': {},
+                'servers': {}
             }
         }
 
