@@ -9,7 +9,7 @@ xlsx_to_dt(path_xlsx=r'data/input/Data Hall Geometry input_R02CA.xlsx',
     name_in_dt=['Level_2_R02_v1', 'Level_3_R02_v1', 'Level_4_R02_v1']
     )
 
-* * The order of values in the lists passed for sheets, server_sheets, server_random_number, output_filename, and name_in_dt must be consistent. **
+** The order of values in the lists passed for sheets, server_sheets, server_random_number, output_filename, and name_in_dt must be consistent. **
 * path_xlsx: The file address of the Excel file that needs to be passed in.
 * sheets:    The name of the worksheet corresponding to each room in the Excel file.
 * server_sheets: The name of the worksheet corresponding to the server in each room in the Excel file.
