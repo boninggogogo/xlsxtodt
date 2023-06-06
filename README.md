@@ -1,22 +1,25 @@
 # Currently, the generated file does not have "acus" in the input section.
 
 ``` python
-xlsx_to_dt(  
-           path_xlsx = r'data/input/Data Hall Geometry input_R02CA.xlsx',  
-           sheets = ['level 2', 'level 3', 'Level 4'],  
-           server_sheets = ['Level 2 Server', 'Level 3 Server', 'Level 4 Server'],  
-           server_random_number = [10, 10, 10],  
-           types ='geometryModel',  
-           output_filename = ['Level_2_R02.json', 'Level_3_R02.json', 'Level_4_R02.json'],  
-           name_in_dt = ['Level_2_R02_v1', 'Level_3_R02_v1', 'Level_4_R02_v1']  
-           )
+Leve4_R01_room = XlsToDT()
+Leve4_R01_room.xls_to_dt(path_xls=r'data/Excel_to_DT_Level_4_R01.xlsx',
+                         geometry_info=['Geometry_info', ],
+                         crca_info=['CRAC_Info', ],
+                         server_info=['Server_info', ],
+                         servers_count=[10, ],
+                         model_info='Model_info',
+                         path_output='./output/',
+                         name_in_dt=['Excel_to_DT_Level_4_R01', ],
+                         output_file=['Excel_to_DT_Level_4_R01.json', ]
+                         )
 ```
 
-__The order of values in the lists passed for sheets, server_sheets, server_random_number, output_filename, and name_in_dt must be consistent.__
-* __path_xlsx:__ The file address of the Excel file that needs to be passed in.
-* __sheets:__    The name of the worksheet corresponding to each room in the Excel file.
-* __server_sheets:__ The name of the worksheet corresponding to the server in each room in the Excel file.
-* __server_random_number:__ The number of randomly generated servers is needed for the racks in the room.
-* __types:__ For geometryModel is needed a separate worksheet, here you need to pass in the name of the worksheet.
-* __output_filename:__ Output the file name and address of the DT file.
-* __name_in_dt:__ The value of name in the DT file can be defined here.
+* __path_xls:__ The file address of the Excel file that needs to be passed in.
+* __geometry_info:__ Relevant information for geometry, corresponds to the worksheet name in the Excel file. This parameter specifies the name of the worksheet that contains geometry-related data.
+* __crca_info:__ Relevant information for CRCA, corresponds to the worksheet name in the Excel file. This parameter specifies the name of the worksheet that contains CRCA-related data.
+* __server_info:__ Relevant information for servers, corresponds to the worksheet name in the Excel file. This parameter specifies the name of the worksheet that contains server-related data.
+* __servers_count:__ The number of servers to be randomly generated. This parameter specifies the number of servers to generate for each room.
+* __model_info:__ Relevant information for model_info, corresponds to the worksheet name in the Excel file. This parameter specifies the name of the worksheet that contains model_info-related data.
+* __path_output:__ The address where the generated file will be saved. This parameter specifies the output path for the generated DT file.
+* __name_in_dt:__ The value of the name variable in the DT file can be defined here. This parameter sets the value of the name variable in the generated DT file.
+* __output_file:__ The name of the generated file. This parameter specifies the file name and extension for the generated DT file.
